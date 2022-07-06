@@ -1,34 +1,37 @@
-import { returnAString, returnHello } from "../../src/fundamentals-ex/stringExercises";
+import {returnHello, returnAString, concatenateStrings, giveOneLetter, giveTheIndexOfWord  } from "../../src/fundamentals-ex/stringExercises";
 
 describe('Variables can be a string', () => {
-    test.skip('should say Hello', () => {
+    test('should say Hello', () => {
         /* agrega la línea que falta */
         const word = "Hello";
         expect(returnHello()).toBe('Hello');
     });
 
-    test.skip('should return Hello World', () => {
+    test('should return Hello World', () => {
         /* Modifica la function returnAString del archivo stringExercises */
         const result = returnAString();
         expect(result).toBe('Hello World');
     });
 
-    test.skip('should be return I Love JS', () => {
-        /* Añade las líneas necesarias al test / Modifica la function concatenateStrings */
+    test('should be return I Love JS', () => {
+    
 
-        expect().toBe('I Love JS');
+        expect(concatenateStrings()).toBe('I Love JS');
     });
 
-    test.skip('should return letter g', () => {
-        /* Añade las líneas necesarias al test / Modifica la function giveOneLetter para que devuelva la letra g de la variable configurada */
-        
-        expect().toBe('g');
+    test('should return letter g', () => {
+const result= giveOneLetter()      
+expect(result).toBe('g');
     });
 
     test.skip('should return -1', () => {
         /* Añade las líneas necesarias al test / Modifica la function giveTheIndexOfWord */
+        //given
+        //then
+        const result = giveTheIndexOfWord()
+        //when
 
-        expect().toEqual(-1);
+        expect(result).toEqual(-1);
     });
 
     test.skip('should return "Give a Man a Pussy Cat" ', () => {
